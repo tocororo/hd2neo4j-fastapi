@@ -16,4 +16,4 @@ app.include_router(mapper_routes.rt)
 
 def start():
     """Launched with `poetry run start` at root level"""
-    uvicorn.run("hd2neo4j.main:app", host="0.0.0.0", port=8000, reload=True)
+    uvicorn.run("hd2neo4j_fastapi.main:app", host="0.0.0.0", port=8000, reload=True)

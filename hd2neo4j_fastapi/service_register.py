@@ -1,5 +1,5 @@
 from hd2neo4j.services import RepositoryService, MapperService
-from config import get_settings
+from hd2neo4j_fastapi.config import get_settings
 
 class ServiceRegistry:
     _instance = None

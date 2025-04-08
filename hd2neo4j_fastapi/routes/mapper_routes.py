@@ -1,7 +1,6 @@
 from fastapi import APIRouter, File
 from typing import Annotated
-from hd2neo4j.services import MapperService, RepositoryService
-from service_register import ServiceRegistry
+from hd2neo4j_fastapi.service_register import ServiceRegistry
 
 rt = APIRouter(
     prefix="/mapper",

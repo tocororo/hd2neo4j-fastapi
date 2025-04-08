@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "hd2neo4j_fastapi"
+version = "0.1.0"
+description = "fastapi implementation for standalone use of hd2neo4j tool"
+authors = ["Jorge Luis Arencibia <jorge9815rdz@gmail.com>"]
+license = "GPL 3.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.115.12"
+pydantic-settings = "^2.8.1"
+uvicorn = "^0.34.0"
+hd2neo4j = "^0.1.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+start = "hd2neo4j.main:start"
